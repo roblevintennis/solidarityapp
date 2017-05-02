@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :subcategories
   end
   
-  resource :listings
+  resources :listings
   
   root 'categories#index'
   
