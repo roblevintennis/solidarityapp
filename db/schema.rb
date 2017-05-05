@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170502231053) do
+ActiveRecord::Schema.define(version: 20170505212150) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20170502231053) do
     t.datetime "updated_at"
     t.integer  "category_id"
     t.integer  "subcategory_id"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "subcategories", force: :cascade do |t|
