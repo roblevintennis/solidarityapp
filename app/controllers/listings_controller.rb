@@ -13,6 +13,24 @@ class ListingsController < ApplicationController
   
   def show
     @listing = Listing.find(params[:id])
+    @category = Category.find(@listing.category_id)
+    @subcategory = Subcategory.find(@listing.subcategory_id)
+  end
+  
+  def edit
+    @listing = Listing.find(params[:id])
+  end
+  
+  def update
+    @listing = Listing.find(params[:id])
+    @listing.update(listing_params)
+    redirect_to @listing
+  end
+
+  def destroy
+    @listing = Listing.find(params[:id])
+    @listing.destroy
+    redirect_to root_path
   end
   
   def search
