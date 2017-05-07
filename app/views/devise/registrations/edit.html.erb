@@ -1,10 +1,5 @@
-<div class="topbar">
-  <div class="container">
-    <div class="vertical-center">
-      <%= link_to 'solidarity', root_path %> > edit account
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/breadcrumb", locals: {current_page: "edit account"} %>
+
 <div class="container">
   <div id="contact-area">
     <h2>Sign up</h2>
