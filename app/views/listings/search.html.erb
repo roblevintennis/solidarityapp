@@ -7,16 +7,5 @@
      <div class="highest-price">highest-price</div>
      <div class="lowest-price">lowest-price</div>
    </div>
-  <ul class="list-margin">
-    <% if @listings.present? %>
-      <% @listings.each do |listing| %>
-      <li>
-        <span><%= listing.created_at.strftime('%B %d, %Y') %></span>
-        <%= link_to listing.title, listing %> - (<%= listing.city %>, <%= listing.state %>)
-      </li>
-      <% end %>
-    <% else %>
-      <p>No listings found.</p>
-    <% end %>
-  </ul>
+   <%= render partial: "listings" %>
 </div>
