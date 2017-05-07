@@ -1,12 +1,7 @@
 <%= javascript_include_tag 'listings.js' %>
 
-<div class="topbar">
-  <div class="container">
-    <div class="vertical-center">
-      rubyslist > jobs > accounting
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/breadcrumb", locals: {current_page: "edit listing"} %>
+
 <div class="container">
   <div id="contact-area">
     <%= form_for @listing do |f| %>

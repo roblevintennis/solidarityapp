@@ -1,10 +1,5 @@
-<div class="topbar">
-  <div class="container">
-    <div class="vertical-center">
-      <%= link_to 'solidarity', root_path %>  > <%= link_to @category.name, @category %> > <%= @subcategory.name %> 
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/breadcrumb", locals: {category: @category, current_page:  @subcategory.name} %>
+
 <div class="container">
   <div class="row">
      <div class="newest">newest</div>

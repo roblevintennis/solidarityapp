@@ -1,10 +1,5 @@
-<div class="topbar">
-  <div class="container">
-    <div class="vertical-center">
-      <%= link_to 'solidarity', root_path %>  > search results
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/breadcrumb", locals: {current_page:  "search results"} %>
+
 <div class="container">
   <div class="row">
      <div class="newest">newest</div>
