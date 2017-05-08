@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'autoprefixer-rails', git: 'git@github.com:ai/autoprefixer-rails', branch: 'master'
+gem 'autoprefixer-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'rails', '4.1.14.2'
 
