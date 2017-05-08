@@ -1,31 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
+Cheat sheet .. sorry but this is not yet in "simple cookbook" form
 * `rails generate devise:install`
-
 * `rails generate devise User`
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+* `bundle install`
+* `heroku apps --all`
+* `git push heroku master`
+* `heroku run rake db:migrate`
+* `heroku run rake db:seed`
+* `heroku open`
+* `heroku run rake db:version # compare against local`
+* `heroku logs # debug 500 errors, etc.`
 
 https://dashboard.heroku.com/apps/soladarity/activity
 https://github.com/roblevintennis/solidarity
 
-Please feel free to use a different markup language if you do not plan to run
+Generate docs with:
 <tt>rake doc:app</tt>.
