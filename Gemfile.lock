@@ -1,11 +1,3 @@
-GIT
-  remote: git@github.com:ai/autoprefixer-rails
-  revision: 340f038dc1978424dc2fc3ae38a74a1cd5145cb2
-  branch: master
-  specs:
-    autoprefixer-rails (7.0.1)
-      execjs
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +28,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (7.0.1)
+      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -135,7 +129,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  autoprefixer-rails!
+  autoprefixer-rails
   byebug
   coffee-rails
   devise
