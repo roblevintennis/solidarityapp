@@ -13,7 +13,8 @@ Cheat sheet .. sorry but this is not yet in "simple cookbook" form
 * `heroku logs # debug 500 errors, etc.`
 
 https://dashboard.heroku.com/apps/soladarity/activity
-https://github.com/roblevintennis/solidarity
+
+https://github.com/roblevintennis/solidarityapp.git
 
 Generate docs with:
 <tt>rake doc:app</tt>.
