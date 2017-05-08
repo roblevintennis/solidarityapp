@@ -4,6 +4,8 @@ gem 'autoprefixer-rails'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'rails', '4.1.14.2'
 
+gem 'rails_12factor', group: :production
+
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # gem 'mysql2', '= 0.3.18' #NOTE: we are hard-locked to this version on rails4
@@ -52,3 +54,4 @@ group :development do
   gem 'spring'
 end
 
+ruby "2.3.1"
