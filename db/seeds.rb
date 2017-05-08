@@ -13,6 +13,10 @@ personals_category = Category.where(name: 'personals').first_or_create(name: 'pe
 services_category = Category.where(name: 'services').first_or_create(name: 'services')
 for_sale_category = Category.where(name: 'for sale').first_or_create(name: 'for sale')
 
+User.create(email: "bob@example.com", password: "password", password_confirmation: "password")
+User.create(email: "mary@example.com", password: "password", password_confirmation: "password")
+User.create(email: "joe@example.com", password: "password", password_confirmation: "password")
+
 Subcategory.where(name: 'activities', category_id: community_category.id).first_or_create(name: 'activities', category_id: community_category.id)
 Subcategory.where(name: 'classes', category_id: community_category.id).first_or_create(name: 'classes', category_id: community_category.id)
 Subcategory.where(name: 'events', category_id: community_category.id).first_or_create(name: 'events', category_id: community_category.id)
