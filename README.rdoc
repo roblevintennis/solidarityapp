@@ -7,9 +7,9 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+* `rails generate devise:install`
 
-* Configuration
+* `rails generate devise User`
 
 * Database creation
 

@@ -5,7 +5,7 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'rails', '4.1.14.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # gem 'mysql2', '= 0.3.18' #NOTE: we are hard-locked to this version on rails4
 
 # Use SCSS for stylesheets
